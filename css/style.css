@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #475059;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+/* Global */
+.wrapper {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a.primary-btn {
+    color: #fff !important;
+    text-decoration: none;
+    background: #4198B9;
+    background: linear-gradient(#4198b9, #6bb3c0);
+    font-weight: 700;
+    font-size: 25px;
+    padding: 15px 70px;
+    border-radius: 18px;
+}
+
+a.secondary-btn {
+    color: #fff !important;
+    background-color: #1e5670;
+    padding: 10px 24px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+a.secondary-btn:hover {
+    background-color: #4198B9;
+}
+
+.font-blue {
+    color: #4198B9;
+}
+
+.font-green {
+    color: #91CFC9;
+}
+
+.font-white {
+    color: #fff;
+}
+
+h1 {
+    font-size: 38px;
+    color: #1e5670;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #475059;
+}
+
+.subheading {
+    text-align: left;
+}
+
+.grid {
+    display: flex;
+}
+
+#where-were-heading .wrapper,#case-studies .wrapper,#team-members .wrapper {
+    padding: 70px 0;
+}
+
+
+/* Header */
+
+header {
+    background-color: #fff;
+    min-height: 70px;
+    border-top: 5px solid #4198b9;
+}
+
+#header .wrapper {
+    padding-top: 30px;
+}
+
+header #logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+#main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu li {
+    display: inline-block;
+}
+
+#main-menu li a {
+    text-decoration: none;
+    margin: auto 15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #475059;
+    transition: 0.5s;
+}
+
+#main-menu li a:hover {
+    color: #4198b9;
+}
+
+#landing {
+    background-image: url('/images/hero-1.png');
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+}
+
+#hero .wrapper {
+    padding: 50px 0;
+}
+
+#hero p {
+    padding-bottom: 30px;
+}
+
+/* What Motivates Us */
+
+#what-motivates {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 40px;
+}
+
+#what-motivates .features img {
+    width: 30%;
+}
+
+.features {
+    width: 20%;
+    margin: 3% 1%;
+}
+
+.features p {
+    font-size: 14px;
+}
+
+/* What We Do Today */
+
+#what-we-do {
+    background: #f7f7f7;
+}
+
+#what-we-do .grid {
+    align-items: flex-end;
+}
+
+#what-we-do .wrapper {
+    width: 100%;
+}
+
+#what-we-do .grid-section {
+    width: 50%;
+}
+
+#what-we-do img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+#what-we-do .grid-section:nth-child(2n) {
+    margin: 40px;
+}
+
+/* Where We're Heading */
+
+#where-were-heading {
+    background: #4198B9;
+    background: linear-gradient(#4198b9, #6bb3c0);
+    text-align: center;
+}
+
+
+#where-were-heading h2,
+#where-were-heading p {
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(88, 88, 88, 0.2);
+}
+
+/* Where We're Heading */
+
+#case-studies {
+    text-align: center;
+}
+
+#case-studies .features p {
+    font-size: 18;
+}
+
+.article {
+    width: 20%;
+    margin: 3% 1%;
+}
+
+.article p {
+    font-size: 16px;
+}
+
+.article img {
+    width: 60%;
+}
+
+/* Join the Team */
+
+#join-the-team {
+    background: #575f68;
+    text-align: center;
+}
+
+#map img {
+    width: 80%;
+}
+
+#join-the-team .wrapper {
+    padding: 40px 0;
+}
+
+/* Team Members */
+
+#team-members {
+    text-align: center;
+}
+
+#team-members .features p {
+    font-size: 18;
+}
+
+.headshot {
+    width: 15%;
+    margin: 1%;
+}
+
+.headshot p {
+    font-size: 16px;
+}
+
+.headshot img {
+    width: 70%;
+}
+
+#team-members #member-btn {
+    margin: 70px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #475059;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    border-top: 5px solid #4198b9;
+}
