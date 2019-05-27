@@ -263,6 +263,8 @@ header nav {
 
 .headshot img {
     width: 70%;
+    border: 3px solid #4198B9;
+    border-radius: 50%;
 }
 
 #team-members #member-btn {
@@ -272,8 +274,14 @@ header nav {
 /* Footer */
 footer {
     background-color: #475059;
-    padding: 30px;
-    color: #fff;
+    padding: 10px;
     text-align: center;
     border-top: 5px solid #4198b9;
+    font-size: 13px;
 }
+
+footer p {
+    font-size: 15px;
+    color: #fff;
+}
+
