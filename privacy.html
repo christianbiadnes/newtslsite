@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABlCAYAAAC7vkbxAAAACXBIWXMAAAXEAAAFxAGbebUAAAAFhUlEQVR4nO2dO1rbQBCAJ3z04QbhBlGlNobCbeAEMZU7xZwg5gQx7tzBDaClcEzrJuIG+AbxCci3ZpYoRivtW7Or/Vv8kPwz2p2d1ejDy8sLuOJ08TACgAkAfHb2JWFzDwDT5XhY8rNwIuR08ZABwE0SIc3Fcjxkv5d9IShjBQAfXZ5BhJwvx8M7q0JOFw9HAMDC71Pff10NtgBwfGD5QydJhjbsijJyISShz8jaJQvHjt9Jhhk2I+SoixOIDduXrIQhSQgxkhBiJCHESEKIkYQQIwkhRhJCjCSEGEkIMZIQYiQhZmwA4MnmByYherBi0iUAsBXuY5sfnISowURcMQnL8XAGADPbpepDDycRC0zEbDke/oHX+g+LjG+2zy0JaecWt+o8771y6uLLkhAxIhHOogOSkFoeUcSq4TUzV1+ehPxDRgSLjgEAfHV1EEnIay4xYZvUJF/vZOzg9FnIBiPiRvYNGB1fXB5UH4VsUYTOOOA0OqBnQrY4GL/lEiqcLh7OXEcH9EjINUaFsogKzmZWVWIXIswlVMD7XLzsWY5VyD3OnIxEVHA+dnBiEyKVS6jgMzogotVeJuJkOR4OVGXMy/VI9De838XL2MEJPUKUcwkOipji3V6i90983wkWqhAbIvhlqHZ8wOjwfr9LaEK2mEcoD7Lzcj3AH7+aS1wVWS4a+L1HBwQkRDupE4iofuY7uooOCESIVlI3L9cZ/uCi7HpWZLnoM62XZmWhLEQrqZuX62OMiKYCUlN0OCs+yUBRCJvCjhyJ4DRFh7cksA5KQrSSunm5PsIf8bvkWzZUowOICHnCZQ4dERON2dCUanRAx0K0cgkDEbvvLLK89vuw+NRpdEBHQkyTOpMZUFMEdB4d4FmISS6xn13r0BYdzotPMvgQ0rUITlOiRyI6wIOQWxywbWXXujwWWV67q4RSdIBDIbpJnW0RnKYIUB7LXGJbiG5S17bMYXRMRZbXTql9F59ksCYE84iBynsUs2tdyM+sqnSSh3gSAaFFB/gWorHMYUpteRaX18lFB/gSYphd63LbUnwi2YrQqZCORHBIlWZlcSbEwjKHCW3RQbaFrXUhlrNrXYKMDrAphIgIaNm4MKXe4NlYiMPsWoe20qyv2Z022kKIieCQLc3KoizE8TKHCWQ3LqggLcRjdq1L8NEBMkICEAEtGxdIlGZlEQrpYJnDBNIbF1R41/u94+xaB1aare3Ig9Hxi/wZVHiLkABFcIJaXm9jFyEdL3OYEFV0MA7n5boM+FlRTcsgXu98sgW7pe0MS6+h0bRxYRTqP9kBW/cpsnyALeu2BI5JlqjGDs7bTZ9Fls+wh2AI0RJcaVaW/+7CrUTLFemjjjQ6QHRbdJHl7KROiF7CmqKDwvK/EcL71PGkj233pbVA08aF4J8S19g4gC1HFFme4U5ECgRbmpVkI9XJochy9l95QeCAgy3NSnIn3VoDt/KfdziuxB4du3qOUq8TTMQGHUkRRQcb5374PxyrsN+T9Wl5Vm4+U2R5iVI2Hg+4beNCyLBWUhl/prr2o1dxdXjlYYli9xRlUb0DFxFDpdy/d8boWbiepFxhXtQLjPpl4X/twGGuIty4ECvGDcwcS2nauBAlVjrKVaTYnH0JNy7EjLUWfw6kNG1ciBZrD7jn4Ea6lWGiJizNxo71JpiYp5guY/RmVrWP9QjhzMs1k/JT4629jQ5w2SYWK5A6q8QxLBJq47pv70RxOizcuNAXnArBWdKZwsyrt2MHx3lna1wUFHaPriAszfYJL63G8TJ03fKy3kcHuJxl1dGwS/IRd7v0Ht/N+EeC8UTmktYLvArBpHH/0tRUmu0d3h9XgflJdXdkGjsqdPX8EJ78pejYoxMheOm6TNGxBwD8BSMaMcAIgrbuAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Truly Scaled - Home</title>
+</head>
+
+<body>
+    <!-- Hero and Navigation -->
+    <header class="header">
+        <div id="header-div">
+            <div class="wrapper">
+                <nav>
+                    <a href="index.html" class="logo"><img src="/images/tsd-logo.png"
+                            alt="Logo: Truly Scaled Limited"></a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="index.html#what-motivates" class="nav-links">What Motivates Us?</a></li>
+                        <li><a href="index.html#what-we-do" class="nav-links">What We Do Today</a></li>
+                        <li><a href="index.html#where-were-heading" class="nav-links">Where We're Heading</a></li>
+                        <li><a href="index.html#case-studies" class="nav-links">Case Studies</a></li>
+                        <li><a href="index.html#join-the-team" class="secondary-btn nav-links">Join the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div>
+        <article id="terms-content">
+            <div class="wrapper">
+
+                <h1>Privacy</h1>
+
+                <h5>Effective and Last Updated: 2019-06-01</h5>
+                <p>The privacy of our visitors is important to us.</p>
+                <p>This website, <strong>Trulyscaled.com</strong>, is owned and operated by Truly Scaled Limited. We are
+                    committed to protecting the privacy of our visitors while they interact with the content, products,
+                    and services on this site (the “Site”). This Privacy Policy applies to the Site only. It does not
+                    apply to other websites to which we link.</p>
+                <p>Because we gather certain types of information about our users, we want you to understand what
+                    information we collect about you, how we collect it, how that information is used, and how you can
+                    control our disclosure of it. <strong>Trulyscaled.com</strong> may sell, rent, trade, or share your
+                    personal information with third parties. You agree that your use of the Site signifies your assent
+                    to this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the Site.
+                </p>
+                <p>This privacy policy covers the following:</p>
+
+                <h3>1) Information Collected</h3>
+                <p>We collect two types of information from you: i) information that you voluntarily provide to us (e.g.
+                    through a voluntary registration process, sign-ups or emails); and ii) information that is derived
+                    through automated tracking mechanisms.</p>
+                <p>
+                </p>
+                <ul>
+                    <li>
+                        <h3>Voluntary Registration Information.</h3>
+                        <p>In order to fully access this Site, you must first complete the registration process, during
+                            which we will collect personal information about you. The information may include your name,
+                            address, phone number, and email address. We do not collect personally identifiable
+                            information about you except when you specifically provide such information to us on a
+                            voluntary basis.</p>
+                        <p>By registering with us, you consent to the use and method of disclosure as described in this
+                            Privacy Policy.</p>
+                    </li>
+                    <li>
+                        <h3>Voluntary Information for Services and Features</h3>
+                        <p>We also collect personally identifiable information when you choose to use certain other
+                            features of the Site, including: i) consenting to receive email, text messages, mailing, or
+                            phone calls about upcoming promotions or events; ii) consenting to receive email; iii)
+                            participating in reviews and discussions; iv) submitting questions via email, text, phone,
+                            or any other communication medium. When you choose to use these additional features, we may
+                            require you to provide your “Contact Information” in addition to other personal information,
+                            such as your phone number, that may be required to complete a transaction. Occasionally, we
+                            may also request information such as your shopping preferences and demographics which will
+                            help us better serve you and our others users in the future.</p>
+                    </li>
+                    <li>
+                        <h3>Log Files</h3>
+                        <p>As with most other websites, we collect and use the data contained in log files. The
+                            information in the log files include your IP (internet protocol) address, your ISP (internet
+                            service provider, such as AOL or Shaw Cable), the browser you used to visit our site (such
+                            as Google Chrome, Internet Explorer or Mozilla Firefox), the time you visited our site, and
+                            which pages you visited throughout our site.</p>
+                    </li>
+                    <li>
+                        <h3>Cookies</h3>
+                        <p>We do use cookies to store information, such as your personal preferences when you visit our
+                            site. This could include only showing you a popup once in your visit, or the ability to
+                            login to some of our features, such as forums.</p>
+
+                        <h4><em>How We Use Cookies</em></h4>
+                        <p>Like many websites we use cookies to store and then retrieve small bits of information on
+                            your computer when you visit. This information is used to make the site work as you expect
+                            it to. It is not personally identifiable to you, but it can be used to give you a more
+                            personalized web experience.</p>
+                        <p>Some of the information stored is put there by other companies whose software we have added
+                            to the site, and this can also impact your experience of other websites you may visit after
+                            leaving ours. If you continue to use this site without taking action to prevent the storage
+                            of this information, you are effectively agreeing to this use.</p>
+                        <p>If you want to learn more about the general uses of cookies, including how to stop them being
+                            stored by your computer, please visit <a href="http://cookiepedia.co.uk/all-about-cookies"
+                                target="_blank">Cookiepedia – all about cookies</a></p>
+                        <p>Below is a list of the different types of cookies used on this site, and an explanation of
+                            what they are used for.</p>
+                        <p>If you would like any more information, <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">please get in touch</a>.</p>
+
+                        <ul>
+                            <li>
+                                <h4><em>Strictly Necessary Cookies</em></h4>
+                                <p>These cookies are necessary for the website to function. They are usually only set in
+                                    response to actions made by you which amount to a request for services, such as
+                                    logging in or filling in forms.</p>
+                                <p>You can set your browser to block or alert you about these cookies, but some parts of
+                                    the site will not then work. These cookies do not store any personally identifiable
+                                    information.</p>
+                            </li>
+
+                            <li>
+                                <h4><em>Performance Cookies</em></h4>
+                                <p>These cookies allow us to count visits and traffic sources so we can measure and
+                                    improve the performance of our site. They help us to know which pages are the most
+                                    and least popular and see how visitors move around the site. &nbsp;We may use
+                                    services like Google Analytics to which you may learn about your <a
+                                        href="https://tools.google.com/dlpage/gaoptout/" target="_blank">opt-out options
+                                        currently available here</a>.</p>
+                            </li>
+
+                            <li>
+                                <h4><em>Functionality Cookies</em></h4>
+                                <p>These cookies enable the website to provide enhanced functionality and
+                                    personalisation. They may be set by us or by third party providers whose services we
+                                    have added to our pages.</p>
+                                <p>If you do not allow these cookies then some or all of these services may not function
+                                    properly.</p>
+                            </li>
+
+                            <li>
+                                <h4><em>Targeting Cookies</em></h4>
+                                <p>These cookies may be set through our site by our advertising partners. They may be
+                                    used by those companies to build a profile of your interests and show you relevant
+                                    adverts on other sites.</p>
+                                <p>They do not store any personally identifiable information, but are based on uniquely
+                                    identifying your browser and internet device. If you do not allow these cookies, you
+                                    will experience less targeted advertising.</p>
+                            </li>
+
+                            <li>
+                                <h4><em>Other Cookies: DoubleClick DART cookies</em></h4>
+                                <p>We also may use DART cookies for ad serving through Google’s DoubleClick, which
+                                    places a cookie on your computer when you visit a site using DoubleClick
+                                    advertising<em> (</em>including some Google AdSense advertisements). This cookie is
+                                    used to serve ads specific to you and your interests (”interest based targeting”).
+                                </p>
+                                <p>The ads served will be targeted based on your previous browsing history (For example,
+                                    if you have been viewing sites about visiting Las Vegas, you may see Las Vegas hotel
+                                    advertisements when viewing a non-related site, such as on a site about hockey).
+                                    DART uses “non personally identifiable information”. It does NOT track personal
+                                    information about you, such as your name, email address, physical address, telephone
+                                    number, social security numbers, bank account numbers, or credit card numbers.</p>
+                                <p>You can opt-out of this ad serving on all sites using this advertising by visiting <a
+                                        href="http://www.doubleclick.com/privacy/dart_adserving.aspx"
+                                        target="_blank">this link</a>.</p>
+                            </li>
+                        </ul>
+                        <p>You can choose to disable or selectively turn off our cookies or third-party cookies in your
+                            browser settings, or by managing preferences in programs such as Norton Internet Security.
+                            However, this can affect how you are able to interact with our site as well as other
+                            websites. This could include the inability to login to services or programs, such as logging
+                            into forums or accounts.</p>
+                        <p>Deleting cookies does not mean you are permanently opted out of any advertising program.
+                            Unless you have settings that disallow cookies, the next time you visit a site running the
+                            advertisements, a new cookie will be added.</p>
+
+                    </li>
+                </ul>
+                <p></p>
+
+                <h3>2) Referrals</h3>
+                <p>You may choose to invite friends to join the <strong>Trulyscaled.com</strong> by sending invitation
+                    emails via our invite feature. <strong>Trulyscaled.com</strong> stores the email addresses you
+                    provide so that the respondents may be added to your social network, and also to send reminders of
+                    the invitations. <strong>Trulyscaled.com</strong> does not sell these email addresses or use them to
+                    send any other communication besides invitations and invitation reminders. Recipients of invitations
+                    may contact <strong>Trulyscaled.com</strong> to request removal of their information from our
+                    database.</p>
+
+                <h3>3) How We Use Your Information</h3>
+                <p><strong>Trulyscaled.com </strong>only uses your personal information for the original purposes it was
+                    given. Your personal information will not be sold or otherwise transferred to unaffiliated third
+                    parties without your approval at the time of collection.</p>
+                <p><strong>Trulyscaled.com </strong>may rent, give, or sell any personal information to third parties
+                    solely at our discretion. We may also share your information as required to do so by law. Further,
+                    <strong>Trulyscaled.com</strong> reserves the right to contact you regarding matters relevant to the
+                    underlying service provided and/or the information collected.</p>
+                <p>Please note that personally identifiable information is used only to provide you with a more
+                    enjoyable, convenient online experience and to help us identify and/or provide information, products
+                    or services that may be of interest to you. We use your personally identifiable information to
+                    support and enhance your use of the Site and its features, including without limitation: providing
+                    customer service, tracking email invitations you send, and otherwise supporting your use of the
+                    Site.</p>
+                <p><strong>Trulyscaled.com</strong> may use your personal information for target advertising based on
+                    things such as your region, gender, interests, goals, habits, etc.</p>
+                <p>We may permit certain trusted third parties to track usage, analyze data such as the source address
+                    that a page request is coming from, your IP address or domain name, the date and time of the page
+                    request, the referring Web site (if any) and other parameters in the URL. This is collected in order
+                    to better understand our Web site usage, and enhance the performance of services to maintain and
+                    operate the Site and certain features on the Site. We may use third parties to host the Site,
+                    operate various features available on the Site, send emails, analyze data, provide search results
+                    and links, and assist in fulfilling your orders.</p>
+                <p>Also, we may share personally identifiable or other information with our parent, subsidiaries,
+                    divisions, and affiliates.</p>
+                <p>We may transfer personally identifiable information as an asset in connection with a proposed or
+                    actual merger or sale (including any transfers made as part of an insolvency or bankruptcy
+                    proceeding) involving all or part of our business or as part of a corporate reorganization, stock
+                    sale or other change in control.</p>
+                <p><strong>Trulyscaled.com</strong> may disclose your personal information in special cases where we
+                    have reason to believe that disclosing this information is necessary to identify, contact, or bring
+                    legal action against someone who may be violating our terms and conditions of use or may be causing
+                    injury or interference with our rights, property, our customers, or anyone who could be harmed by
+                    such activities.</p>
+                <p>WE ARE NOT LIABLE OR RESPONSIBLE FOR THE PERSONALLY IDENTIFIABLE OR OTHER INFORMATION YOU CHOOSE TO
+                    SUBMIT IN REVIEWS, DISCUSSIONS, OR ANY OTHER PUBLICLY ACCESSIBLE AREA OF THE SITE.</p>
+                <p>You will receive notice when your personally identifiable information might be provided to any third
+                    party for any reason other than as set forth in this Privacy Policy, and you will have an
+                    opportunity to request that we not share such information.</p>
+                <p>We use non-identifying and aggregate information to better design our website and for business and
+                    administrative purposes. We may also use or share with third parties, for any purpose, aggregated
+                    data that contains no personally identifiable information.</p>
+
+                <h3>4) How We Protect Your Information</h3>
+                <p>We are committed to protecting the information we receive from you. We take appropriate security
+                    measures to protect your information against unauthorized access to or unauthorized alteration,
+                    disclosure, or destruction of data. To prevent unauthorized access, maintain data accuracy, and
+                    ensure the correct use of information, we maintain appropriate physical, electronic, and managerial
+                    procedures to safeguard and secure the information and data stored on our system. While no computer
+                    system is completely secure, we believe the measures we have implemented reduce the likelihood of
+                    security problems to a level appropriate to the type of data involved.</p>
+                <p>We may sell, distribute or lease your personal information to third parties. We may use your personal
+                    information to send you promotional information about third parties which we think you may find
+                    interesting.</p>
+                <p>If you believe that any information we have on you is incorrect or incomplete, please <a
+                        href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us</a> as soon as possible, at the above address. We will promptly correct any
+                    information found to be erroneous.</p>
+
+                <h3>5)Third Party Advertising</h3>
+                <p>Advertisements appearing on this Site may be delivered to you by <strong>Trulyscaled.com</strong> or
+                    one of our Web advertising partners. Our Web advertising partners may set cookies. Doing this allows
+                    the advertising partners to recognize your computer each time they send you an advertisement. In
+                    this way, they may compile information about where you, or others who are using your computer, saw
+                    their advertisements and determine which advertisements are clicked. This information allows an
+                    advertising partner to deliver targeted advertisements that they believe will be of most interest to
+                    you. <strong>Trulyscaled.com</strong> does not have access to or control of the cookies that may be
+                    placed by the third party advertising servers of ad partners.</p>
+                <p>This privacy statement covers the use of cookies by <strong>Trulyscaled.com</strong> and may not
+                    cover the use of cookies by any of its advertisers.</p>
+
+                <h3>6) Accessing and Updating Your Personal Information and Preferences</h3>
+                <p>We may provide mechanisms for updating and correcting your personal information for many of our
+                    services. You may modify or remove any of your personal information by <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">electronically
+                        notifying us</a> of any changes.</p>
+                <p>We will retain your information for as long as your account is active, or as needed in order to
+                    provide you services. Please <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us</a> if you wish to cancel your account or
+                    request that we no longer use your information to provide you services. We will retain and use your
+                    information as necessary to comply with our legal obligations, resolve disputes, and enforce our
+                    agreements.</p>
+
+                <h3>7) Email Choice/Opt-out</h3>
+                <p>If you no longer wish to receive updates or notifications via our newsletter or other promotional
+                    communications, you may opt-out of receiving these communications by selecting the appropriate
+                    action link at the bottom of each email newsletter.</p>
+                <p>If no such link is accessible to you and you would prefer not to receive such communications in the
+                    future, you may <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">electronically notify us</a> of any changes in your opt-in and/or
+                    opt-out preferences.</p>
+                <p>We will make commercially reasonable efforts to implement your opt-out requests promptly, but you may
+                    still receive communications from us for up to ten (10) business days as we process your request.
+                </p>
+                <p>You may be notified if your personal information is collected by any third party that is not our
+                    agent/service provider other than as specified in this policy, so you can make an informed choice as
+                    to whether or not to share your information with that party. Although there are no plans to do this
+                    presently, if this ever occurs, an opt-out will be provided to you before any personal information
+                    is shared, so it is always your choice when information is provided to a third party.</p>
+
+                <h3>8) Children’s Privacy and Parental Controls</h3>
+                <p>We do not solicit any personal information from children. If you are not 18 or older, you are not
+                    authorized to use the Site. Parents should be aware that there are parental control tools available
+                    online that can be used to prevent children from submitting information online without parental
+                    permission or from accessing material that is harmful to minors.</p>
+
+                <h3>9) Links to other websites</h3>
+                <p>Our website may contain links to other websites of interest. However, once you have used these links
+                    to leave our site, you should note that we do not have any control over such external websites.
+                    Therefore, we cannot be responsible for the protection and privacy of any information which you
+                    provide whilst visiting such sites, and such sites are not governed by this privacy statement. You
+                    should exercise caution and look at the privacy statement applicable to the website in question.</p>
+
+                <h3>10) Disclaimer to Security</h3>
+                <p>We are committed to ensuring that your information is secure. In order to prevent unauthorized access
+                    or disclosure, we have put in place suitable physical, electronic and managerial procedures to
+                    safeguard and secure the information we collect online.</p>
+                <p>We may follow generally accepted standards to protect the personal information submitted to us, both
+                    during transmission and once we receive it. No method of transmission over the Internet, or method
+                    of electronic storage, is 100% secure, however. Therefore, we cannot guarantee its absolute
+                    security.</p>
+                <p>By consenting to the Terms and Conditions of the Site and hence the Privacy Policy, you consent that
+                    no data transmission over the Internet is completely secure. We cannot guarantee or warrant the
+                    security of any information you provide to us and you transmit such information to us at your own
+                    risk.</p>
+                <p>If you have any questions about security on our Web site, you can <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us here</a>.
+                </p>
+
+                <h3>11) Notification of Changes</h3>
+                <p><strong>Trulyscaled.com </strong>reserves the right to modify this Privacy Policy at any time and at
+                    its sole discretion. If at some point in the future, there is a change to our Privacy Policy, unless
+                    we obtain your express consent, such change will only apply to information collected after the
+                    revised Privacy Policy took effect. Your continued use of the Site indicates your assent to the
+                    Privacy Policy as posted. We encourage you to periodically review this page for the latest
+                    information on our privacy practices.</p>
+
+                <h3>12) CONTACT INFORMATION:</h3>
+                <p>If you have any questions or concerns regarding this Privacy Policy please <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us
+                        here</a>.</p>
+
+            </div>
+        </article>
+    </div>
+
+
+    <footer>
+
+        <div id="footer-widget">
+            <h3>Propel Your Content Globally™</h3>
+            <div id="footer-logo">
+                <svg version="1.1" x="0px" y="0px" viewBox="0 0 595.3 241.5"
+                    style="enable-background:new 0 0 595.3 241.5;" xml:space="preserve">
+                    <style>
+                        .st0-g {
+                            display: none
+                        }
+
+                        .st1-g {
+                            display: inline
+                        }
+
+                        .st2-g {
+                            fill: #828383
+                        }
+
+                        .st3-g {
+                            fill: #828383
+                        }
+
+                        .st4-g {
+                            fill: #828383
+                        }
+
+                        .st5-g {
+                            fill: none;
+                            stroke: #828383;
+                            stroke-width: 7;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st6-g {
+                            fill: none;
+                            stroke: #828383;
+                            stroke-width: 7;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st7-g {
+                            display: inline;
+                            fill: none;
+                            stroke: #828383;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st8-g {
+                            display: inline;
+                            fill: #828383
+                        }
+
+                        .st9-g {
+                            display: inline;
+                            fill: #828383
+                        }
+                    </style>
+                    <g id="original" class="st0-g">
+                        <g id="X5xaY9.tif" class="st1-g">
+                            <image style="overflow:visible;" width="226" height="74" id="Layer_0_1_"
+                                transform="matrix(2.2179 0 0 2.2179 47.3721 36.009)"> </image>
+                        </g>
+                    </g>
+                    <g id="logo" class="st0-g">
+                        <g id="orange-block" class="st1-g">
+                            <path id="XMLID_1_" class="st2-g"
+                                d="M199.2,170.7H88.9c-6.7,0-12.2-5.5-12.2-12.2V48.2c0-6.7,5.5-12.2,12.2-12.2h110.3 c6.7,0,12.2,5.5,12.2,12.2v110.3C211.4,165.2,206,170.7,199.2,170.7z">
+                            </path>
+                        </g>
+                        <g id="yellow-triangle" class="st1-g">
+                            <g id="XMLID_5_">
+                                <path id="XMLID_63_" class="st3-g"
+                                    d="M97.5,215c-14.2-28.9-36.3-50.9-65.9-65.7l133-67.2L97.5,215z"></path>
+                                <path id="XMLID_60_" class="st4-g"
+                                    d="M153.3,93.5L97.4,204.2c-13.1-22.9-31.5-41.2-54.9-54.7L153.3,93.5 M175.9,70.8L20.2,149.5 c36.6,15.7,62.3,41.3,77.1,77.1L175.9,70.8L175.9,70.8z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Layer_7">
+                        <path id="XMLID_21_" class="st2-g"
+                            d="M199.2,36H88.9c-6.7,0-12.2,5.5-12.2,12.2v72.7l99.2-50.1l-50.5,99.9h73.7 c6.7,0,12.2-5.5,12.2-12.2V48.2C211.4,41.5,206,36,199.2,36z">
+                        </path>
+                    </g>
+                    <g id="Layer_8">
+                        <g id="XMLID_15_">
+                            <path id="XMLID_68_" class="st3-g"
+                                d="M153.3,93.5l-110.8,56c22.3,13.1,36.8,26.3,54.9,54.5L153.3,93.5z"></path>
+                        </g>
+                    </g>
+                    <g id="typed">
+                        <line id="XMLID_8_" class="st5-g" x1="219.1" y1="41" x2="268.6" y2="41"></line>
+                        <line id="XMLID_9_" class="st5-g" x1="243.8" y1="96.9" x2="243.8" y2="41"></line>
+                        <path id="XMLID_10_" class="st5-g" d="M284.8,96.9V41c27.4-1.2,39.7,11.1,16.8,31.1L323,96.9">
+                        </path>
+                        <path id="XMLID_11_" class="st5-g" d="M342.7,39.1v42.6c2.2,17.2,42.9,16.2,42.9,0V39.1"></path>
+                        <polyline id="XMLID_7_" class="st5-g" points="413.2,39.1 413.2,94.2 445.6,94.2 "></polyline>
+                        <polyline id="XMLID_12_" class="st5-g" points="454.2,41 476.1,68.9 499,40.9 "></polyline>
+                        <line id="XMLID_14_" class="st5-g" x1="476.6" y1="96.9" x2="476.1" y2="68.9"></line>
+                        <path id="XMLID_16_" class="st6-g"
+                            d="M254.1,110.8c-26.3-2.2-33.1,17.4-13.4,26.5c21.5,11.3,17.1,28.7-17.6,28.7"></path>
+                        <path id="XMLID_17_" class="st6-g" d="M311.3,110.8c-51.1,0-51.1,56.4,0,56.4"></path>
+                        <polyline id="XMLID_13_" class="st6-g" points="321.5,169 348,113.8 374.6,169 "></polyline>
+                        <line id="XMLID_23_" class="st6-g" x1="331.8" y1="144.6" x2="364.1" y2="144.6"></line>
+                        <polyline id="XMLID_18_" class="st6-g" points="393.9,110.8 393.9,166 425.6,166 "></polyline>
+                        <polyline id="XMLID_24_" class="st6-g" points="478,166 443.2,166 443.2,110.8 476.6,110.8 ">
+                        </polyline>
+                        <line id="XMLID_26_" class="st6-g" x1="476.6" y1="137.4" x2="443.2" y2="137.4"></line>
+                        <path id="XMLID_27_" class="st6-g" d="M500.5,112.7c56.9-3.7,58.7,53.3,0,53.3V112.7z"></path>
+                    </g>
+                    <g id="outlines" class="st0-g">
+                        <polyline id="XMLID_6_" class="st7-g"
+                            points="58.7,188.1 175.9,70.8 20.2,149.5 97.2,226.6 175.9,70.8 "></polyline>
+                        <rect id="XMLID_4_" x="76.3" y="36" class="st7" width="135.4" height="135.4"></rect>
+                        <rect id="XMLID_2_" x="532.9" y="36.9" class="st8" width="15.7" height="15.7"></rect>
+                        <rect id="XMLID_3_" x="532.9" y="57.1" class="st9" width="15.7" height="15.7"></rect>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <div>© Copyright 2019</div> |
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="/terms.html">Terms</a></li>
+                    <li><a href="/privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+</body>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABlCAYAAAC7vkbxAAAACXBIWXMAAAXEAAAFxAGbebUAAAAFhUlEQVR4nO2dO1rbQBCAJ3z04QbhBlGlNobCbeAEMZU7xZwg5gQx7tzBDaClcEzrJuIG+AbxCci3ZpYoRivtW7Or/Vv8kPwz2p2d1ejDy8sLuOJ08TACgAkAfHb2JWFzDwDT5XhY8rNwIuR08ZABwE0SIc3Fcjxkv5d9IShjBQAfXZ5BhJwvx8M7q0JOFw9HAMDC71Pff10NtgBwfGD5QydJhjbsijJyISShz8jaJQvHjt9Jhhk2I+SoixOIDduXrIQhSQgxkhBiJCHESEKIkYQQIwkhRhJCjCSEGEkIMZIQYiQhZmwA4MnmByYherBi0iUAsBXuY5sfnISowURcMQnL8XAGADPbpepDDycRC0zEbDke/oHX+g+LjG+2zy0JaecWt+o8771y6uLLkhAxIhHOogOSkFoeUcSq4TUzV1+ehPxDRgSLjgEAfHV1EEnIay4xYZvUJF/vZOzg9FnIBiPiRvYNGB1fXB5UH4VsUYTOOOA0OqBnQrY4GL/lEiqcLh7OXEcH9EjINUaFsogKzmZWVWIXIswlVMD7XLzsWY5VyD3OnIxEVHA+dnBiEyKVS6jgMzogotVeJuJkOR4OVGXMy/VI9De838XL2MEJPUKUcwkOipji3V6i90983wkWqhAbIvhlqHZ8wOjwfr9LaEK2mEcoD7Lzcj3AH7+aS1wVWS4a+L1HBwQkRDupE4iofuY7uooOCESIVlI3L9cZ/uCi7HpWZLnoM62XZmWhLEQrqZuX62OMiKYCUlN0OCs+yUBRCJvCjhyJ4DRFh7cksA5KQrSSunm5PsIf8bvkWzZUowOICHnCZQ4dERON2dCUanRAx0K0cgkDEbvvLLK89vuw+NRpdEBHQkyTOpMZUFMEdB4d4FmISS6xn13r0BYdzotPMvgQ0rUITlOiRyI6wIOQWxywbWXXujwWWV67q4RSdIBDIbpJnW0RnKYIUB7LXGJbiG5S17bMYXRMRZbXTql9F59ksCYE84iBynsUs2tdyM+sqnSSh3gSAaFFB/gWorHMYUpteRaX18lFB/gSYphd63LbUnwi2YrQqZCORHBIlWZlcSbEwjKHCW3RQbaFrXUhlrNrXYKMDrAphIgIaNm4MKXe4NlYiMPsWoe20qyv2Z022kKIieCQLc3KoizE8TKHCWQ3LqggLcRjdq1L8NEBMkICEAEtGxdIlGZlEQrpYJnDBNIbF1R41/u94+xaB1aare3Ig9Hxi/wZVHiLkABFcIJaXm9jFyEdL3OYEFV0MA7n5boM+FlRTcsgXu98sgW7pe0MS6+h0bRxYRTqP9kBW/cpsnyALeu2BI5JlqjGDs7bTZ9Fls+wh2AI0RJcaVaW/+7CrUTLFemjjjQ6QHRbdJHl7KROiF7CmqKDwvK/EcL71PGkj233pbVA08aF4J8S19g4gC1HFFme4U5ECgRbmpVkI9XJochy9l95QeCAgy3NSnIn3VoDt/KfdziuxB4du3qOUq8TTMQGHUkRRQcb5374PxyrsN+T9Wl5Vm4+U2R5iVI2Hg+4beNCyLBWUhl/prr2o1dxdXjlYYli9xRlUb0DFxFDpdy/d8boWbiepFxhXtQLjPpl4X/twGGuIty4ECvGDcwcS2nauBAlVjrKVaTYnH0JNy7EjLUWfw6kNG1ciBZrD7jn4Ea6lWGiJizNxo71JpiYp5guY/RmVrWP9QjhzMs1k/JT4629jQ5w2SYWK5A6q8QxLBJq47pv70RxOizcuNAXnArBWdKZwsyrt2MHx3lna1wUFHaPriAszfYJL63G8TJ03fKy3kcHuJxl1dGwS/IRd7v0Ht/N+EeC8UTmktYLvArBpHH/0tRUmu0d3h9XgflJdXdkGjsqdPX8EJ78pejYoxMheOm6TNGxBwD8BSMaMcAIgrbuAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Truly Scaled - Home</title>
+</head>
+
+<body>
+    <!-- Hero and Navigation -->
+    <header class="header">
+        <div id="header-div">
+            <div class="wrapper">
+                <nav>
+                    <a href="index.html" class="logo"><img src="/images/tsd-logo.png"
+                            alt="Logo: Truly Scaled Limited"></a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="index.html#what-motivates" class="nav-links">What Motivates Us?</a></li>
+                        <li><a href="index.html#what-we-do" class="nav-links">What We Do Today</a></li>
+                        <li><a href="index.html#where-were-heading" class="nav-links">Where We're Heading</a></li>
+                        <li><a href="index.html#case-studies" class="nav-links">Case Studies</a></li>
+                        <li><a href="index.html#join-the-team" class="secondary-btn nav-links">Join the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div>
+        <article id="terms-content">
+            <div class="wrapper">
+
+                <h1>Terms of Use</h1>
+
+                <h5>Effective and Last Updated: 2019-06-01</h5>
+                <p>Please Read Carefully Before Using This Website:</p>
+                <p>Truly Scaled Limited maintains <strong>Trulyscaled.com</strong> for information and communication
+                    purposes. This webpage contains the Terms of Use governing your access to and use of Trulyscaled.com
+                    (the “Website” or “Site”). If you do not accept these Terms of Use or you do not meet or comply with
+                    the
+                    provisions, you may not use the Website.</p>
+
+                <h3>PRIVACY POLICY</h3>
+                <p>The <strong>Trulyscaled.com</strong> respects the privacy of its users. Please refer to the Website’s
+                    <a href="privacy.html">Privacy Policy</a> which explains how we collect, use, and disclose
+                    information
+                    that pertains to your privacy. When you access or use the Website, you signify your agreement to
+                    this
+                    Privacy Policy.</p>
+
+                <h3>A. TERMS APPLICABLE TO ALL USERS</h3>
+
+                <h4>1. Overview</h4>
+                <p>YOUR USE OF THIS WEBSITE IS EXPRESSLY CONDITIONED UPON YOUR ACCEPTING AND AGREEING TO THESE TERMS OF
+                    USE.
+                </p>
+                <p>For users who are not registered with this Website, your use of the Website will be deemed as your
+                    acceptance of the Terms of Use, Section A.</p>
+                <p>For users who are registered with the Website, your use of the Website shall be subject to (i)
+                    certain
+                    designated terms (see Section B below) in addition to those terms applicable to all users, and (ii)
+                    shall be further conditioned upon your creation of an account on the Website.</p>
+                <p>IF THESE TERMS OF USE ARE NOT COMPLETELY ACCEPTABLE TO YOU, YOU MUST IMMEDIATELY TERMINATE YOUR USE
+                    OF
+                    THIS WEBSITE.</p>
+
+                <h4>2. Changes To Terms</h4>
+                <p><strong>Trulyscaled.com </strong>may, at any time, for any reason and without notice, make changes to
+                    (i)
+                    this Website, including its look, feel, format, and content, as well as (ii) the products and/or
+                    services as described in this Website. Any modifications will take effect when posted to the
+                    Website.
+                    Therefore, each time you access the Website, you need to review the Terms of Use upon which access
+                    and
+                    use of this Website is conditioned. By continuing to access or use of the Website after those
+                    revisions
+                    become effective, you agree to be bound by the revised terms. If you do not agree to the new terms,
+                    please stop using the Website.</p>
+
+                <h4>3. Jurisdiction</h4>
+                <p>The Website is directed to those individuals and entities located in Hong Kong. It is not directed to
+                    any
+                    person or entity in any jurisdiction where (by reason of nationality, residence, citizenship, or
+                    otherwise) the publication or availability of the Website and its content, including its products
+                    and
+                    services, are unavailable or otherwise contrary to local laws or regulations. If this applies to
+                    you,
+                    you are not authorized to access or use any of the information on this Website.
+                    <strong>Trulyscaled.com</strong> makes no representation that the information, opinions, advice or
+                    other
+                    content on the Website (collectively, “Content”) is appropriate, or that its products and services
+                    are
+                    available outside of Hong Kong. Those who choose to access this Website from other locations do so
+                    at
+                    their own risk and are responsible for compliance with applicable local laws.</p>
+
+                <h4>4. Scope of Use and User E-Mail</h4>
+                <p>You are only authorized to view, use, copy for your records and download small portions of the
+                    Content of
+                    this Website (including without limitation text, graphics, software, audio and video files, and
+                    photos)
+                    for your informational, non-commercial use, provided that you leave all the copyright notices,
+                    including
+                    copyright management information, or other proprietary notices intact.</p>
+                <p>You may not store, modify, reproduce, transmit, reverse engineer or distribute any portion of the
+                    Content
+                    on this Website, or the design or layout of the Website or individual sections of it, in any form or
+                    media. The systematic retrieval of data from the Website is also prohibited.</p>
+                <p>E-mail submissions over the Internet may not be secure and are subject to the risk of interception by
+                    third parties. Please consider this fact before e-mailing any information. Also, please consult our
+                    <a href="privacy.html">Privacy Policy</a>. You agree not to submit or transmit any e-mails or
+                    materials
+                    through the Website that: (i) are defamatory, threatening, obscene or harassing; (ii) contain a
+                    virus,
+                    worm, Trojan horse or any other harmful component; (iii) incorporate copyrighted or other
+                    proprietary
+                    material of any third party without that party’s permission; or (iv) otherwise violate any
+                    applicable
+                    laws. <strong>Trulyscaled.com</strong> shall not be subject to any obligations of confidentiality
+                    regarding any information or materials that you submit online except as specified in these Terms of
+                    Use,
+                    or as set forth in any additional terms and conditions relating to specific products or services, or
+                    as
+                    otherwise specifically agreed upon, or required by law.</p>
+                <p>The commercial use, reproduction, transmission or distribution of any information, software or other
+                    material available through the Website without the prior written consent of
+                    <strong>Trulyscaled.com</strong> is strictly prohibited.</p>
+
+                <h4>5. Copyrights and Trademarks</h4>
+                <p>The materials in this Site, as well as the organization and layout of this site, may be copyrighted
+                    and
+                    may be protected by Hong Kong and international copyright laws and treaty provisions. You may
+                    access,
+                    download and print materials on this Website solely for your personal and non-commercial use;
+                    however,
+                    any print-out of this Site, or portions of the Site, must include <strong>Trulyscaled.com’s</strong>
+                    copyright notice. No right, title or interest in any of the materials contained on this Site is
+                    transferred to you as a result of accessing, downloading or printing such materials. You may not
+                    copy,
+                    modify, distribute, transmit, display, reproduce, publish, license any part of this Site; create
+                    derivative works from, link to or frame in another website, use on any other website, transfer or
+                    sell
+                    any information obtained from this Site without the prior written permission of
+                    <strong>Trulyscaled.com</strong>.</p>
+                <p>Except as expressly provided under the “Scope of Use” Section above, you may not use, reproduce,
+                    modify,
+                    transmit, distribute, or publicly display or operate this Website without the prior written
+                    permission
+                    of <strong>Trulyscaled.com</strong>. You may not use a part of this Website on any other website,
+                    without <strong>Trulyscaled.com’s</strong> prior written consent.</p>
+                <p><strong>Trulyscaled.com</strong> respects the intellectual property rights of others and expects our
+                    Users to do the same. The policy of <strong>Trulyscaled.com</strong> is to terminate the accounts of
+                    repeat copyright offenders and other users who infringe upon the intellectual property rights of
+                    others.
+                    If you believe that your work has been copied in a way that constitutes copyright infringement,
+                    please
+                    <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us</a>.</p>
+
+                <h4>6. Links</h4>
+                <p>For your convenience and for your convenience only, we may provide links to various other Websites
+                    (“Third Party Site”) as well as content or items belonging to or originating from third parties that
+                    may
+                    be of interest to you. However, <strong>Trulyscaled.com</strong> does not control nor endorse such
+                    websites and is not responsible for their content, nor is <strong>Trulyscaled.com</strong>
+                    responsible
+                    for the accuracy or reliability of any information, data, opinions, advice, or statements contained
+                    within such websites. If you decide to access any of the third party sites linked to this Website,
+                    you
+                    do so at your own risk and you should be aware that our terms and policies no longer govern. You
+                    should
+                    review the applicable terms and policies, including privacy and data gathering practices, of any
+                    site to
+                    which you navigate to from this Site. These Terms of Use policy applies only to
+                    <strong>Trulyscaled.com’s</strong> website and the products and services
+                    <strong>Trulyscaled.com</strong> offers. <strong>Trulyscaled.com</strong> reserves the right to
+                    terminate any link or linking program at any time. <strong>Trulyscaled.com</strong> disclaims all
+                    warranties, express and implied, as to the accuracy, validity, and legality or otherwise of any
+                    materials or information contained on such sites.</p>
+                <p>You may not link to this Website without <strong>Trulyscaled.com’s</strong> written permission. If
+                    you
+                    are interested in linking to this Website, please <a
+                        href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us</a>.</p>
+
+                <h4>7. No Unlawful Or Prohibited Use</h4>
+                <p>As a condition of your use of the Website, you warrant to <strong>Trulyscaled.com</strong> that you
+                    will
+                    not use the Website for any purpose that is unlawful or prohibited by these terms, conditions, and
+                    notices. You may not use the Website in any manner that could damage, disable, overburden, or impair
+                    the
+                    Site or interfere with any other party’s use and enjoyment of the Website. You may not obtain or
+                    attempt
+                    to obtain any materials or information through any means not intentionally made available or
+                    provided
+                    for through the Site.</p>
+
+                <h4>8. Spamming</h4>
+                <p>Gathering email addresses from <strong>Trulyscaled.com</strong> through harvesting or automated means
+                    is
+                    prohibited. Posting or transmitting unauthorized or unsolicited advertising, promotional materials,
+                    or
+                    any other forms of solicitation to other Users is prohibited.</p>
+                <p>Inquiries regarding a commercial relationship with <strong>Trulyscaled.com</strong> should be
+                    submitted
+                    using the <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us</a>
+                    feature on the website.</p>
+
+                <h4>9. No Warranties</h4>
+                <p>THE WEBSITE, AND ANY CONTENT, ARE PROVIDED TO YOU ON AN “AS IS,” “AS AVAILABLE” BASIS WITHOUT
+                    WARRANTY OF
+                    ANY KIND WHETHER EXPRESS, STATUTORY OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES
+                    OF
+                    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, SYSTEMS INTEGRATION, ACCURACY,
+                    AND
+                    NON-INFRINGEMENT, ALL OF WHICH <strong>TRULYSCALED.COM </strong>EXPRESSLY DISCLAIMS.
+                    <strong>TRULYSCALED.COM </strong>DOES NOT ENDORSE AND MAKES NO WARRANTY AS TO THE ACCURACY,
+                    COMPLETENESS, CURRENCY, OR RELIABILITY OF THE CONTENT, AND <strong>TRULYSCALED.COM </strong>WILL NOT
+                    BE
+                    LIABLE OR OTHERWISE RESPONSIBLE FOR ANY FAILURE OR DELAY IN UPDATING THE WEBSITE OR ANY CONTENT. WE
+                    HAVE
+                    NO DUTY TO UPDATE THE CONTENT OF THE WEBSITE. <strong>TRULYSCALED.COM </strong>MAKES NO
+                    REPRESENTATIONS
+                    OR WARRANTIES THAT USE OF THE CONTENT WILL BE UNINTERRUPTED OR ERROR-FREE. YOU ARE RESPONSIBLE FOR
+                    ANY
+                    RESULTS OR OTHER CONSEQUENCES OF ACCESSING THE WEBSITE AND USING THE CONTENT, AND FOR TAKING ALL
+                    NECESSARY PRECAUTIONS TO ENSURE THAT ANY CONTENT YOU MAY ACCESS, DOWNLOAD OR OTHERWISE OBTAIN IS
+                    FREE OF
+                    VIRUSES OR ANY OTHER HARMFUL COMPONENTS. THIS WARRANTY DISCLAIMER MAY BE DIFFERENT IN CONNECTION
+                    WITH
+                    SPECIFIC PRODUCTS AND SERVICES OFFERED BY <strong>TRULYSCALED.COM</strong>. SOME STATES DO NOT ALLOW
+                    THE
+                    DISCLAIMER OF IMPLIED WARRANTIES, SO THE FOREGOING DISCLAIMER MAY NOT APPLY TO YOU. YOU MAY ALSO
+                    HAVE
+                    OTHER LEGAL RIGHTS THAT VARY FROM JURISDICTION TO JURISDICTION.</p>
+
+                <h4>10. Governing Law, Location and Miscellaneous</h4>
+                <p>These Terms of Use shall be governed in all respects by the laws of Hong Kong, without reference to
+                    its
+                    choice of law rules. If an applicable law is in conflict with any part of the Terms of Use, the
+                    Terms of
+                    Use will be deemed modified to conform to the law. The other provisions will not be affected by any
+                    such
+                    modification.</p>
+
+                <h4>11. Separate Agreements</h4>
+                <p>You may have other agreements with <strong>Trulyscaled.com</strong>. Those agreements are separate
+                    and in
+                    addition to these Terms of Use. These Terms of Use do not modify, revise or amend the terms of any
+                    other
+                    agreements you may have with <strong>Trulyscaled.com</strong>.</p>
+
+                <h4>12. DMCA Copyright Policy and Copyright Agent</h4>
+                <p><strong>Trulyscaled.com </strong>respects the intellectual property rights of others. If you believe
+                    something on this Site has infringed your intellectual property rights, please notify us
+                    electronically
+                    and provide the following information:</p>
+                <p>
+                </p>
+                <ol type="i">
+                    <li>A physical or electronic signature of a person authorized to act on behalf of the owner of an
+                        exclusive right that is allegedly infringed.</li>
+                    <li>Identification of the copyrighted work claimed to have been infringed.</li>
+                    <li>Identification of the material that is claimed to be infringing or the subject of infringing
+                        activity, and that is to be removed or access to which is to be disabled.</li>
+                    <li>Address, telephone number, and, if available, an electronic mail address where we may contact
+                        you.
+                    </li>
+                    <li>A statement that the complaining party believes in good faith that use of the material in the
+                        manner
+                        complained of is not authorized by the copyright owner, its agent, or the law.</li>
+                    <li>A statement that the information in the notification is accurate, and under penalty of perjury,
+                        that
+                        you are authorized to act on behalf of the owner of an exclusive right that is allegedly
+                        infringed.
+                    </li>
+                </ol>
+                <p></p>
+                <p>The Site’s Copyright Agent can be reached by <a
+                        href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contacting us
+                        electronically</a>.</p>
+
+                <h4>13. Hong Kong Resident</h4>
+                <p>You represent that you are a Hong Kong resident.</p>
+
+                <h4>14. No Professional Advice</h4>
+                <p>The information available on the Website is intended to be a general information resource regarding
+                    the
+                    matters covered, and is not tailored to your specific circumstance. You should not construe this as
+                    legal, accounting, or other professional advice. This Website is not intended for use by minors. YOU
+                    SHOULD EVALUATE ALL INFORMATION, OPINIONS AND ADVICE AVAILABLE ON THIS WEBSITE IN CONSULTATION WITH
+                    YOUR
+                    INSURANCE SPECIALIST, OR WITH YOUR LEGAL, TAX, FINANCIAL OR OTHER ADVISOR, AS APPROPRIATE.</p>
+
+                <h4>15. Users Disputes</h4>
+                <p>You are solely responsible for your interactions with other Users. <strong>Trulyscaled.com</strong>
+                    reserves the right, but has no obligation, to monitor disputes between you and other Users.</p>
+
+                <h4>16. User Submissions And Communications; Public Areas:</h4>
+                <p>You acknowledge that you own, are solely responsible for, or otherwise control all of the rights to
+                    the
+                    content that you post; that the content is accurate; that use of the content you supply does not
+                    violate
+                    these Terms of Use and will not cause injury to any person or entity; and that you will indemnify
+                    <strong>Trulyscaled.com</strong> or its affiliates for all claims resulting from content you supply.
+                </p>
+                <p>If you make any submission to an area of the Website accessed by or accessible to the public (“Public
+                    Area”), or if you submit any business information, idea, concept or invention to
+                    <strong>Trulyscaled.com</strong> by email, text message, social media networks, or telephone, or any
+                    other communication medium you automatically represent and warrant that the owner of such content
+                    <strong>or intellectual property</strong> has expressly granted to <strong>Trulyscaled.com</strong>
+                    on a
+                    royalty-free, perpetual, irrevocable, world-wide nonexclusive license to use, reproduce, create
+                    derivative works from, modify, publish, edit, translate, distribute, perform, and display the
+                    communication or content in any media or medium, or any form, format, or forum now known or
+                    hereafter
+                    developed. <strong>Trulyscaled.com</strong> may sublicense its rights through multiple tiers of
+                    sublicenses. If you wish to keep any business information, ideas, concepts or inventions private or
+                    proprietary, you must not submit them to the Public Areas or to <strong>Trulyscaled.com</strong> by
+                    email, text message, social media networks, or telephone. We try to answer every email, text
+                    message,
+                    social media networks, and telephone call and/or message in a timely manner, but are not always able
+                    to
+                    do so.</p>
+                <p>Some of the forums (individual bulletin boards and posts on social media networks, or blog, for
+                    instance)
+                    on the Website may not be moderated or reviewed. Accordingly, Users will be held directly and solely
+                    responsible for the content of messages that are posted. While not moderating the forums, the Site
+                    reviewer will periodically perform an administrative review for the purpose of deleting messages
+                    that
+                    are old, have received few responses, are off topic or irrelevant, serve as advertisements, or seem
+                    otherwise inappropriate. <strong>Trulyscaled.com</strong> has full discretion to delete messages.
+                    Users
+                    are encouraged to read the specific forum rules displayed in each discussion forum first before
+                    participating in that forum.</p>
+                <p><strong>Trulyscaled.com</strong> reserves the right (but is not obligated) to do any or all of the
+                    following:</p>
+                <p>
+                </p>
+                <ol type="a">
+                    <li>Record the dialogue in public chat rooms.</li>
+                    <li>Examine an allegation that a communication(s) do(es) not conform to the terms of this section,
+                        and
+                        determine in its sole discretion to remove or request the removal of the communication(s).</li>
+                    <li>Remove communications that are abusive, illegal, or disruptive, or that otherwise fail to
+                        conform
+                        with these Terms of Use.</li>
+                    <li>Terminate a user’s access to any or all Public Areas and/or the com Site upon any breach of
+                        these
+                        Terms of Use.</li>
+                    <li>Monitor, edit, or disclose any communication in the Public Areas.</li>
+                    <li>Edit or delete any communication(s) posted on the Trulyscaled.com Site, regardless of whether
+                        such
+                        communication(s) violate these standards.</li>
+                </ol>
+                <p></p>
+                <p><strong>Trulyscaled.com </strong>reserves the right to take any action it deems necessary to protect
+                    the
+                    personal safety of our guests or the public. <strong>Trulyscaled.com<strong> has no liability or
+                            responsibility to users of the Trulyscaled.com</strong> Website or any other person or
+                        entity
+                        for performance or nonperformance of the aforementioned activities.</strong></p>
+
+                <h4>17. Arbitration</h4>
+                <p>Except as regarding any action seeking equitable relief, including without limitation for the purpose
+                    of
+                    protecting any <strong>Trulyscaled.com</strong> confidential information and/or intellectual
+                    property
+                    rights, any controversy or claim arising out of or relating to these Terms of Use or this Website
+                    shall
+                    be settled by a binding arbitration service to be selected by the Website owner. Any such
+                    controversy or
+                    claim shall be arbitrated on an individual basis, and shall not be consolidated with any arbitration
+                    of
+                    any other party. The arbitration shall be held in Hong Kong.</p>
+                <p>All information relating to or disclosed by any party in connection with the arbitration of any
+                    disputes
+                    hereunder shall be treated by the parties, their representatives, and the arbitrator as proprietary
+                    business information. Such information shall not be disclosed by any party or their respective
+                    representatives without the prior written authorization of the party furnishing such information.
+                    Such
+                    information shall not be disclosed by the arbitrator without the prior written authorization of all
+                    parties. Each party shall bear the burden of its own counsel fees incurred in connection with any
+                    arbitration proceedings.</p>
+                <p>Judgment upon the award returned by the arbitrator may be entered in any court having jurisdiction
+                    over
+                    the parties or their assets or application of enforcement, as the case may be. Any award by the
+                    arbitrator shall be the sole and exclusive remedy of the parties. The parties hereby waive all
+                    rights to
+                    judicial review of the arbitrator’s decision and any award contained therein.</p>
+
+                <h4>18. Limitation of Liability</h4>
+                <p>YOUR USE OF THE CONTENT IS AT YOUR OWN RISK. <strong>TRULYSCALED.COM</strong> SPECIFICALLY DISCLAIMS
+                    ANY
+                    LIABILITY, WHETHER BASED IN CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, FOR ANY
+                    DIRECT,
+                    INDIRECT, INCIDENTAL, PUNITIVE, CONSEQUENTIAL, OR SPECIAL DAMAGES ARISING OUT OF OR IN ANY WAY
+                    CONNECTED
+                    WITH ACCESS TO, USE OF, OR RELIANCE ON THE CONTENT (EVEN IF <strong>TRULYSCALED.COM</strong> HAS
+                    BEEN
+                    ADVISED OF THE POSSIBILITY OF SUCH DAMAGES) OR THAT ARISE IN CONNECTION WITH MISTAKES OR OMISSIONS
+                    IN,
+                    OR DELAYS IN TRANSMISSION OF, INFORMATION TO OR FROM THE USER, ANY FAILURE OF PERFORMANCE, ERROR,
+                    OMISSION, INTERRUPTION, DELETION, DEFECT, DELAY IN OPERATION OR TRANSMISSION OR DELIVERY, COMPUTER
+                    VIRUS
+                    OR MALWARE, COMMUNICATION LINE FAILURE, THEFT OR DESTRUCTION OR UNAUTHORIZED ACCESS TO, ALTERATION
+                    OF,
+                    OR USE OF RECORDS, PROGRAMS OR FILES, INTERRUPTIONS IN TELECOMMUNICATIONS CONNECTIONS TO THE WEBSITE
+                    OR
+                    VIRUSES, WHETHER CAUSED IN WHOLE OR IN PART BY NEGLIGENCE, ACTS OF GOD, TELECOMMUNICATIONS FAILURE,
+                    THEFT OR DESTRUCTION OF, OR UNAUTHORIZED ACCESS TO THE WEBSITE OR THE CONTENT. THIS LIMITATION OF
+                    LIABILITY MAY BE DIFFERENT IN CONNECTION WITH SPECIFIC PRODUCTS AND SERVICES OFFERED BY
+                    <strong>TRULYSCALED.COM</strong>. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY, SO
+                    THIS
+                    LIMITATION MAY NOT APPLY TO YOU.</p>
+                <p>If you have a dispute with one or more users, or a merchant of a product or service that you review
+                    using
+                    the Service, you release us (and our officers, directors, agents, subsidiaries, joint ventures,
+                    contractors, and employees) from claims, demands and damages (actual and consequential) of every
+                    kind
+                    and nature, known and unknown, arising out of or in any way connected with such disputes.</p>
+
+                <h4>19. Indemnity</h4>
+                <p>You agree to defend, indemnify, and hold <strong>Trulyscaled.com</strong>, its officers, directors,
+                    employees, agents, licensors, contractors, and suppliers, harmless from and against any claims,
+                    actions
+                    or demands, liabilities and settlements including without limitation, reasonable legal and
+                    accounting
+                    fees, resulting from, or alleged to result from, your violation of these Terms of Use.</p>
+
+                <h3>B. ADDITIONAL TERMS APPLICABLE ONLY TO REGISTERED USERS</h3>
+
+                <h4>20. Accounts And Security</h4>
+                <p><strong>Trulyscaled.com</strong> does not warrant that the functions contained in the service
+                    provided by
+                    the Website will be uninterrupted or error-free, that defects will be corrected or that this service
+                    or
+                    the server that makes it available will be free of viruses or other harmful components.</p>
+                <p>As part of the registration process, each user may select a password (“Password”) and Login Name
+                    (“Login
+                    Name”). You shall provide <strong>Trulyscaled.com</strong> with accurate, complete, and updated
+                    Account
+                    information. Failure to do so shall constitute a breach of this Terms of Use, which may result in
+                    immediate termination of your Account.</p>
+                <p>You may not:</p>
+                <p>
+                </p>
+                <ol type="a">
+                    <li>select or use a Login Name of another person with the intent to impersonate that person;</li>
+                    <li>use a Login Name subject to the rights of any other person without authorization;</li>
+                    <li>use a Login Name that the Website, in its sole discretion, deems inappropriate or offensive.
+                    </li>
+                </ol>
+                <p></p>
+                <p>You shall notify <strong>Trulyscaled.com</strong> of any known or suspected unauthorized use(s) of
+                    your
+                    Account, or any known or suspected breach of security, including loss, theft, or unauthorized
+                    disclosure
+                    of your password. You shall be responsible for maintaining the confidentiality of your password.</p>
+                <p>Any fraudulent, abusive, or otherwise illegal activity may be grounds for the termination of your
+                    Account, at <strong>Trulyscaled.com’s</strong> sole discretion, and you may be reported to
+                    appropriate
+                    law-enforcement agencies.</p>
+
+                <h4>GENERAL TERMS</h4>
+                <p>If any part of this Agreement is held invalid or unenforceable, that portion of the Agreement will be
+                    construed consistent with applicable law. The remaining portions will remain unchanged and in full
+                    force
+                    and effect. Any failure on the part of the <strong>Trulyscaled.com</strong> to enforce any provision
+                    of
+                    this Agreement will not be considered a waiver of our right to enforce such provision. Our rights
+                    under
+                    this Agreement will survive any termination of this Agreement.</p>
+                <p>You agree that any cause of action related to or arising out of your relationship with the
+                    <strong>Trulyscaled.com</strong> must commence within three (3) months after the cause of action
+                    accrues. Otherwise, such cause of action is permanently barred.</p>
+                <p>These Terms of Use and your use of the Site are governed by the laws of Hong Kong, without regard to
+                    conflict of law provisions.</p>
+                <p><strong>Trulyscaled.com</strong> may assign or delegate these Terms of Service and/or the
+                    <strong>Trulyscaled.com’s</strong> <a href="privacy.html">Privacy Policy</a>, in whole or in part,
+                    to
+                    any rights or obligations, and any unauthorized assignment and delegation by you is void.</p>
+                <p>YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THE TERMS OF USE, AND WILL BE BOUND
+                    BY
+                    THESE TERMS AND CONDITIONS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS OF USE TOGETHER WITH THE
+                    PRIVACY
+                    POLICY AT https://trulyscaled.com/privacy.html REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE
+                    AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY
+                    OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.</p>
+
+                <p><strong>Contact Us:</strong> If you would like to request additional information regarding these
+                    Terms of
+                    Use please <a href="mailto:accounts@trulyscaled.com?Subject=Privacy%20Policy%20Concern">contact us
+                        here</a>.</p>
+            </div>
+        </article>
+    </div>
+
+
+    <footer>
+
+        <div id="footer-widget">
+            <h3>Propel Your Content Globally™</h3>
+            <div id="footer-logo">
+                <svg version="1.1" x="0px" y="0px" viewBox="0 0 595.3 241.5"
+                    style="enable-background:new 0 0 595.3 241.5;" xml:space="preserve">
+                    <style>
+                        .st0-g {
+                            display: none
+                        }
+
+                        .st1-g {
+                            display: inline
+                        }
+
+                        .st2-g {
+                            fill: #828383
+                        }
+
+                        .st3-g {
+                            fill: #828383
+                        }
+
+                        .st4-g {
+                            fill: #828383
+                        }
+
+                        .st5-g {
+                            fill: none;
+                            stroke: #828383;
+                            stroke-width: 7;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st6-g {
+                            fill: none;
+                            stroke: #828383;
+                            stroke-width: 7;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st7-g {
+                            display: inline;
+                            fill: none;
+                            stroke: #828383;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st8-g {
+                            display: inline;
+                            fill: #828383
+                        }
+
+                        .st9-g {
+                            display: inline;
+                            fill: #828383
+                        }
+                    </style>
+                    <g id="original" class="st0-g">
+                        <g id="X5xaY9.tif" class="st1-g">
+                            <image style="overflow:visible;" width="226" height="74" id="Layer_0_1_"
+                                transform="matrix(2.2179 0 0 2.2179 47.3721 36.009)"> </image>
+                        </g>
+                    </g>
+                    <g id="logo" class="st0-g">
+                        <g id="orange-block" class="st1-g">
+                            <path id="XMLID_1_" class="st2-g"
+                                d="M199.2,170.7H88.9c-6.7,0-12.2-5.5-12.2-12.2V48.2c0-6.7,5.5-12.2,12.2-12.2h110.3 c6.7,0,12.2,5.5,12.2,12.2v110.3C211.4,165.2,206,170.7,199.2,170.7z">
+                            </path>
+                        </g>
+                        <g id="yellow-triangle" class="st1-g">
+                            <g id="XMLID_5_">
+                                <path id="XMLID_63_" class="st3-g"
+                                    d="M97.5,215c-14.2-28.9-36.3-50.9-65.9-65.7l133-67.2L97.5,215z"></path>
+                                <path id="XMLID_60_" class="st4-g"
+                                    d="M153.3,93.5L97.4,204.2c-13.1-22.9-31.5-41.2-54.9-54.7L153.3,93.5 M175.9,70.8L20.2,149.5 c36.6,15.7,62.3,41.3,77.1,77.1L175.9,70.8L175.9,70.8z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Layer_7">
+                        <path id="XMLID_21_" class="st2-g"
+                            d="M199.2,36H88.9c-6.7,0-12.2,5.5-12.2,12.2v72.7l99.2-50.1l-50.5,99.9h73.7 c6.7,0,12.2-5.5,12.2-12.2V48.2C211.4,41.5,206,36,199.2,36z">
+                        </path>
+                    </g>
+                    <g id="Layer_8">
+                        <g id="XMLID_15_">
+                            <path id="XMLID_68_" class="st3-g"
+                                d="M153.3,93.5l-110.8,56c22.3,13.1,36.8,26.3,54.9,54.5L153.3,93.5z"></path>
+                        </g>
+                    </g>
+                    <g id="typed">
+                        <line id="XMLID_8_" class="st5-g" x1="219.1" y1="41" x2="268.6" y2="41"></line>
+                        <line id="XMLID_9_" class="st5-g" x1="243.8" y1="96.9" x2="243.8" y2="41"></line>
+                        <path id="XMLID_10_" class="st5-g" d="M284.8,96.9V41c27.4-1.2,39.7,11.1,16.8,31.1L323,96.9">
+                        </path>
+                        <path id="XMLID_11_" class="st5-g" d="M342.7,39.1v42.6c2.2,17.2,42.9,16.2,42.9,0V39.1"></path>
+                        <polyline id="XMLID_7_" class="st5-g" points="413.2,39.1 413.2,94.2 445.6,94.2 "></polyline>
+                        <polyline id="XMLID_12_" class="st5-g" points="454.2,41 476.1,68.9 499,40.9 "></polyline>
+                        <line id="XMLID_14_" class="st5-g" x1="476.6" y1="96.9" x2="476.1" y2="68.9"></line>
+                        <path id="XMLID_16_" class="st6-g"
+                            d="M254.1,110.8c-26.3-2.2-33.1,17.4-13.4,26.5c21.5,11.3,17.1,28.7-17.6,28.7"></path>
+                        <path id="XMLID_17_" class="st6-g" d="M311.3,110.8c-51.1,0-51.1,56.4,0,56.4"></path>
+                        <polyline id="XMLID_13_" class="st6-g" points="321.5,169 348,113.8 374.6,169 "></polyline>
+                        <line id="XMLID_23_" class="st6-g" x1="331.8" y1="144.6" x2="364.1" y2="144.6"></line>
+                        <polyline id="XMLID_18_" class="st6-g" points="393.9,110.8 393.9,166 425.6,166 "></polyline>
+                        <polyline id="XMLID_24_" class="st6-g" points="478,166 443.2,166 443.2,110.8 476.6,110.8 ">
+                        </polyline>
+                        <line id="XMLID_26_" class="st6-g" x1="476.6" y1="137.4" x2="443.2" y2="137.4"></line>
+                        <path id="XMLID_27_" class="st6-g" d="M500.5,112.7c56.9-3.7,58.7,53.3,0,53.3V112.7z"></path>
+                    </g>
+                    <g id="outlines" class="st0-g">
+                        <polyline id="XMLID_6_" class="st7-g"
+                            points="58.7,188.1 175.9,70.8 20.2,149.5 97.2,226.6 175.9,70.8 "></polyline>
+                        <rect id="XMLID_4_" x="76.3" y="36" class="st7" width="135.4" height="135.4"></rect>
+                        <rect id="XMLID_2_" x="532.9" y="36.9" class="st8" width="15.7" height="15.7"></rect>
+                        <rect id="XMLID_3_" x="532.9" y="57.1" class="st9" width="15.7" height="15.7"></rect>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <div>© Copyright 2019</div> |
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="/terms.html">Terms</a></li>
+                    <li><a href="/privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+</body>

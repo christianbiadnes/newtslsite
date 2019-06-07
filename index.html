@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABlCAYAAAC7vkbxAAAACXBIWXMAAAXEAAAFxAGbebUAAAAFhUlEQVR4nO2dO1rbQBCAJ3z04QbhBlGlNobCbeAEMZU7xZwg5gQx7tzBDaClcEzrJuIG+AbxCci3ZpYoRivtW7Or/Vv8kPwz2p2d1ejDy8sLuOJ08TACgAkAfHb2JWFzDwDT5XhY8rNwIuR08ZABwE0SIc3Fcjxkv5d9IShjBQAfXZ5BhJwvx8M7q0JOFw9HAMDC71Pff10NtgBwfGD5QydJhjbsijJyISShz8jaJQvHjt9Jhhk2I+SoixOIDduXrIQhSQgxkhBiJCHESEKIkYQQIwkhRhJCjCSEGEkIMZIQYiQhZmwA4MnmByYherBi0iUAsBXuY5sfnISowURcMQnL8XAGADPbpepDDycRC0zEbDke/oHX+g+LjG+2zy0JaecWt+o8771y6uLLkhAxIhHOogOSkFoeUcSq4TUzV1+ehPxDRgSLjgEAfHV1EEnIay4xYZvUJF/vZOzg9FnIBiPiRvYNGB1fXB5UH4VsUYTOOOA0OqBnQrY4GL/lEiqcLh7OXEcH9EjINUaFsogKzmZWVWIXIswlVMD7XLzsWY5VyD3OnIxEVHA+dnBiEyKVS6jgMzogotVeJuJkOR4OVGXMy/VI9De838XL2MEJPUKUcwkOipji3V6i90983wkWqhAbIvhlqHZ8wOjwfr9LaEK2mEcoD7Lzcj3AH7+aS1wVWS4a+L1HBwQkRDupE4iofuY7uooOCESIVlI3L9cZ/uCi7HpWZLnoM62XZmWhLEQrqZuX62OMiKYCUlN0OCs+yUBRCJvCjhyJ4DRFh7cksA5KQrSSunm5PsIf8bvkWzZUowOICHnCZQ4dERON2dCUanRAx0K0cgkDEbvvLLK89vuw+NRpdEBHQkyTOpMZUFMEdB4d4FmISS6xn13r0BYdzotPMvgQ0rUITlOiRyI6wIOQWxywbWXXujwWWV67q4RSdIBDIbpJnW0RnKYIUB7LXGJbiG5S17bMYXRMRZbXTql9F59ksCYE84iBynsUs2tdyM+sqnSSh3gSAaFFB/gWorHMYUpteRaX18lFB/gSYphd63LbUnwi2YrQqZCORHBIlWZlcSbEwjKHCW3RQbaFrXUhlrNrXYKMDrAphIgIaNm4MKXe4NlYiMPsWoe20qyv2Z022kKIieCQLc3KoizE8TKHCWQ3LqggLcRjdq1L8NEBMkICEAEtGxdIlGZlEQrpYJnDBNIbF1R41/u94+xaB1aare3Ig9Hxi/wZVHiLkABFcIJaXm9jFyEdL3OYEFV0MA7n5boM+FlRTcsgXu98sgW7pe0MS6+h0bRxYRTqP9kBW/cpsnyALeu2BI5JlqjGDs7bTZ9Fls+wh2AI0RJcaVaW/+7CrUTLFemjjjQ6QHRbdJHl7KROiF7CmqKDwvK/EcL71PGkj233pbVA08aF4J8S19g4gC1HFFme4U5ECgRbmpVkI9XJochy9l95QeCAgy3NSnIn3VoDt/KfdziuxB4du3qOUq8TTMQGHUkRRQcb5374PxyrsN+T9Wl5Vm4+U2R5iVI2Hg+4beNCyLBWUhl/prr2o1dxdXjlYYli9xRlUb0DFxFDpdy/d8boWbiepFxhXtQLjPpl4X/twGGuIty4ECvGDcwcS2nauBAlVjrKVaTYnH0JNy7EjLUWfw6kNG1ciBZrD7jn4Ea6lWGiJizNxo71JpiYp5guY/RmVrWP9QjhzMs1k/JT4629jQ5w2SYWK5A6q8QxLBJq47pv70RxOizcuNAXnArBWdKZwsyrt2MHx3lna1wUFHaPriAszfYJL63G8TJ03fKy3kcHuJxl1dGwS/IRd7v0Ht/N+EeC8UTmktYLvArBpHH/0tRUmu0d3h9XgflJdXdkGjsqdPX8EJ78pejYoxMheOm6TNGxBwD8BSMaMcAIgrbuAAAAAElFTkSuQmCC">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Truly Scaled - Home</title>
 </head>
 
 <body>
     <!-- Hero and Navigation -->
-    <header id="landing">
-        <div id="header">
+    <header class="header">
+        <div id="header-div">
             <div class="wrapper">
-                <div id="logo"><a href="#"><img src="/images/tsd-logo.png"></a></div>
-                <nav id="main-menu">
-                    <ul id="menu">
+                <nav>
+                    <a href="#" class="logo"><img src="/images/tsd-logo.png" alt="Logo: Truly Scaled Limited"></a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
                         <li><a href="#what-motivates" class="nav-links">What Motivates Us?</a></li>
                         <li><a href="#what-we-do" class="nav-links">What We Do Today</a></li>
                         <li><a href="#where-were-heading" class="nav-links">Where We're Heading</a></li>
                         <li><a href="#case-studies" class="nav-links">Case Studies</a></li>
-                        <li><a href="#join-the-team" class="secondary-btn"  class="nav-links">Join the Team</a></li>
+                        <li><a href="#join-the-team" class="secondary-btn nav-links">Join the Team</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
 
-        <div id="hero">
-            <div class="wrapper">
+    </header>
+
+    <div id="hero">
+        <div class="wrapper">
+            <div id="hero-content">
                 <h1>Unapologetically Relentless.<br>
                     Designed for Scale.<br>
                     Focused on Personal Growth.<br>
@@ -38,11 +45,12 @@
                     ideas and
                     empower you to take your abilities to<br> an entirely new level.</p>
 
-                <a href="#" class="primary-btn">JOIN US!</a>
+                <a href="https://jobs.trulyscaled.com/" class="primary-btn">JOIN US!</a>
             </div>
         </div>
+    </div>
 
-    </header>
+
 
     <!-- What Motivates Us -->
 
@@ -145,23 +153,19 @@
 
             <div class="grid">
 
-                <div class="article"><a href="#"><img src="/images/pdf1.png" alt="Article: Campaign Crusher"></a>
-                    <p>Campaign Crusher</p>
+                <div class="article"><a href="/images/0-to-8800000-Monthly-Pageviews-in-Under-7-Months.pdf"><img
+                            src="/images/pdf1.png" alt="Article: 8.8 Million Pageviews/Month in 7 Months"></a>
+                    <p>8.8 Million Pageviews/Month in 7 Months</p>
                 </div>
-                <div class="article"><a href="#"><img src="/images/pdf2.png" alt="Article: In-Housing Ad Ops"></a>
-                    <p>In-Housing Ad Ops</p>
+                <div class="article"><a href="/images/101-Percent-Ad-eCPM-Boost-in-4-Weeks.pdf"><img
+                            src="/images/pdf2.png" alt="Article: 101% Revenue Boost in 4 Weeks"></a>
+                    <p>101% Revenue Boost in 4 Weeks</p>
                 </div>
-                <div class="article"><a href="#"><img src="/images/pdf3.png" alt="Article: TEC"></a>
-                    <p>TEC</p>
-                </div>
-                <div class="article"><a href="#"><img src="/images/pdf2.png" alt="Article: VWT"></a>
-                    <p>VWT</p>
-                </div>
-                <div class="article"><a href="#"><img src="/images/pdf1.png" alt="Article: Old Case Studies"></a>
-                    <p>Old Case Studies</p>
+                <div class="article"><a href="/images/0-to-100000-Engaged-Facebook-Fans-in-7-Weeks.pdf"><img
+                            src="/images/pdf3.png" alt="Article: 100k Engaged Facebook Fans in 7 Weeks"></a>
+                    <p>100k Engaged Facebook Fans in 7 Weeks</p>
                 </div>
             </div>
-
         </div>
 
     </div>
@@ -207,7 +211,7 @@
                 <div class="headshot"><img src="/images/headshot/vielle.png" alt="Team Profile: Vielle">
                     <p>Vielle</p>
                 </div>
-                <div class="headshot"><img src="/images/headshot-placeholder.png" alt="Team Profile: Milan">
+                <div class="headshot"><img src="/images/headshot/milan.png" alt="Team Profile: Milan">
                     <p>Milan</p>
                 </div>
 
@@ -245,7 +249,7 @@
                 Scaled team.</p>
 
             <div id="member-btn">
-                <a href="#" class="primary-btn">Choose Excellence, Join Truly Scaled</a>
+                <a href="https://jobs.trulyscaled.com/" class="primary-btn">Choose Excellence, Join Truly Scaled</a>
             </div>
 
         </div>
@@ -253,15 +257,142 @@
     </div>
 
 
-    <!-- Team Members -->
+    <!-- Footer -->
 
     <footer>
 
-        <p>© Copyright 2019 Truly Scaled Limited</p>
+        <div id="footer-widget">
+            <h3>Propel Your Content Globally™</h3>
+            <div id="footer-logo">
+                <svg version="1.1" x="0px" y="0px" viewBox="0 0 595.3 241.5"
+                    style="enable-background:new 0 0 595.3 241.5;" xml:space="preserve">
+                    <style>
+                        .st0-g {
+                            display: none
+                        }
+
+                        .st1-g {
+                            display: inline
+                        }
+
+                        .st2-g {
+                            fill: #828383
+                        }
+
+                        .st3-g {
+                            fill: #828383
+                        }
+
+                        .st4-g {
+                            fill: #828383
+                        }
+
+                        .st5-g {
+                            fill: none;
+                            stroke: #828383;
+                            stroke-width: 7;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st6-g {
+                            fill: none;
+                            stroke: #828383;
+                            stroke-width: 7;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st7-g {
+                            display: inline;
+                            fill: none;
+                            stroke: #828383;
+                            stroke-miterlimit: 10
+                        }
+
+                        .st8-g {
+                            display: inline;
+                            fill: #828383
+                        }
+
+                        .st9-g {
+                            display: inline;
+                            fill: #828383
+                        }
+                    </style>
+                    <g id="original" class="st0-g">
+                        <g id="X5xaY9.tif" class="st1-g">
+                            <image style="overflow:visible;" width="226" height="74" id="Layer_0_1_"
+                                transform="matrix(2.2179 0 0 2.2179 47.3721 36.009)"> </image>
+                        </g>
+                    </g>
+                    <g id="logo" class="st0-g">
+                        <g id="orange-block" class="st1-g">
+                            <path id="XMLID_1_" class="st2-g"
+                                d="M199.2,170.7H88.9c-6.7,0-12.2-5.5-12.2-12.2V48.2c0-6.7,5.5-12.2,12.2-12.2h110.3 c6.7,0,12.2,5.5,12.2,12.2v110.3C211.4,165.2,206,170.7,199.2,170.7z">
+                            </path>
+                        </g>
+                        <g id="yellow-triangle" class="st1-g">
+                            <g id="XMLID_5_">
+                                <path id="XMLID_63_" class="st3-g"
+                                    d="M97.5,215c-14.2-28.9-36.3-50.9-65.9-65.7l133-67.2L97.5,215z"></path>
+                                <path id="XMLID_60_" class="st4-g"
+                                    d="M153.3,93.5L97.4,204.2c-13.1-22.9-31.5-41.2-54.9-54.7L153.3,93.5 M175.9,70.8L20.2,149.5 c36.6,15.7,62.3,41.3,77.1,77.1L175.9,70.8L175.9,70.8z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Layer_7">
+                        <path id="XMLID_21_" class="st2-g"
+                            d="M199.2,36H88.9c-6.7,0-12.2,5.5-12.2,12.2v72.7l99.2-50.1l-50.5,99.9h73.7 c6.7,0,12.2-5.5,12.2-12.2V48.2C211.4,41.5,206,36,199.2,36z">
+                        </path>
+                    </g>
+                    <g id="Layer_8">
+                        <g id="XMLID_15_">
+                            <path id="XMLID_68_" class="st3-g"
+                                d="M153.3,93.5l-110.8,56c22.3,13.1,36.8,26.3,54.9,54.5L153.3,93.5z"></path>
+                        </g>
+                    </g>
+                    <g id="typed">
+                        <line id="XMLID_8_" class="st5-g" x1="219.1" y1="41" x2="268.6" y2="41"></line>
+                        <line id="XMLID_9_" class="st5-g" x1="243.8" y1="96.9" x2="243.8" y2="41"></line>
+                        <path id="XMLID_10_" class="st5-g" d="M284.8,96.9V41c27.4-1.2,39.7,11.1,16.8,31.1L323,96.9">
+                        </path>
+                        <path id="XMLID_11_" class="st5-g" d="M342.7,39.1v42.6c2.2,17.2,42.9,16.2,42.9,0V39.1"></path>
+                        <polyline id="XMLID_7_" class="st5-g" points="413.2,39.1 413.2,94.2 445.6,94.2 "></polyline>
+                        <polyline id="XMLID_12_" class="st5-g" points="454.2,41 476.1,68.9 499,40.9 "></polyline>
+                        <line id="XMLID_14_" class="st5-g" x1="476.6" y1="96.9" x2="476.1" y2="68.9"></line>
+                        <path id="XMLID_16_" class="st6-g"
+                            d="M254.1,110.8c-26.3-2.2-33.1,17.4-13.4,26.5c21.5,11.3,17.1,28.7-17.6,28.7"></path>
+                        <path id="XMLID_17_" class="st6-g" d="M311.3,110.8c-51.1,0-51.1,56.4,0,56.4"></path>
+                        <polyline id="XMLID_13_" class="st6-g" points="321.5,169 348,113.8 374.6,169 "></polyline>
+                        <line id="XMLID_23_" class="st6-g" x1="331.8" y1="144.6" x2="364.1" y2="144.6"></line>
+                        <polyline id="XMLID_18_" class="st6-g" points="393.9,110.8 393.9,166 425.6,166 "></polyline>
+                        <polyline id="XMLID_24_" class="st6-g" points="478,166 443.2,166 443.2,110.8 476.6,110.8 ">
+                        </polyline>
+                        <line id="XMLID_26_" class="st6-g" x1="476.6" y1="137.4" x2="443.2" y2="137.4"></line>
+                        <path id="XMLID_27_" class="st6-g" d="M500.5,112.7c56.9-3.7,58.7,53.3,0,53.3V112.7z"></path>
+                    </g>
+                    <g id="outlines" class="st0-g">
+                        <polyline id="XMLID_6_" class="st7-g"
+                            points="58.7,188.1 175.9,70.8 20.2,149.5 97.2,226.6 175.9,70.8 "></polyline>
+                        <rect id="XMLID_4_" x="76.3" y="36" class="st7" width="135.4" height="135.4"></rect>
+                        <rect id="XMLID_2_" x="532.9" y="36.9" class="st8" width="15.7" height="15.7"></rect>
+                        <rect id="XMLID_3_" x="532.9" y="57.1" class="st9" width="15.7" height="15.7"></rect>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <div>© Copyright 2019</div> | 
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="/terms.html">Terms</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </footer>
-
-    
 
 </body>
 

@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
-    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: #475059;
@@ -26,18 +30,6 @@ a.primary-btn {
     font-size: 25px;
     padding: 15px 70px;
     border-radius: 18px;
-}
-
-a.secondary-btn {
-    color: #fff !important;
-    background-color: #1e5670;
-    padding: 10px 24px;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-}
-
-a.secondary-btn:hover {
-    background-color: #4198B9;
 }
 
 .font-blue {
@@ -77,68 +69,148 @@ p {
     display: flex;
 }
 
-#where-were-heading .wrapper,#case-studies .wrapper,#team-members .wrapper {
+#where-were-heading .wrapper,
+#case-studies .wrapper,
+#team-members .wrapper {
     padding: 70px 0;
 }
 
+footer a {
+    font-size: 14px !important;
+}
 
-/* Header */
+/* Header and Hamburger Menu */
 
-header {
+#header-div {
     background-color: #fff;
-    min-height: 70px;
+    width: 100%;
+    z-index: 3;
     border-top: 5px solid #4198b9;
+    padding-top: 20px;
 }
 
-#header .wrapper {
-    padding-top: 30px;
-}
-
-header #logo {
-    float: left;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-#main-menu ul {
-    list-style-type: none;
-    padding: 0;
+.header ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
 }
 
-#main-menu li {
-    display: inline-block;
-}
-
-#main-menu li a {
-    text-decoration: none;
-    margin: auto 15px;
+.header li a {
+    display: block;
     font-weight: 700;
     font-size: 14px;
     color: #475059;
     transition: 0.5s;
+    text-decoration: none;
+    margin: 10px;
 }
 
-#main-menu li a:hover {
+.header li a:hover {
     color: #4198b9;
 }
 
-#landing {
-    background-image: url('/images/hero-1.png');
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* Menu Icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 24px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* Menu Button */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* Hero Image */
+
+#hero {
+    background-image: url('/images/hero-bg.png');
     background-size: cover;
     background-position: center right;
-    height: 100vh;
+    margin-top: -20px;
+    height: 90vh;
 }
 
 #hero .wrapper {
     padding: 50px 0;
 }
 
+#hero h1 {
+    text-shadow: 1px 1px 3px #fff;
+}
+
 #hero p {
     padding-bottom: 30px;
+    text-shadow: 1px 1px 3px #fff;
 }
 
 /* What Motivates Us */
@@ -186,7 +258,7 @@ header nav {
 }
 
 #what-we-do .grid-section:nth-child(2n) {
-    margin: 40px;
+    margin: auto 40px;
 }
 
 /* Where We're Heading */
@@ -197,26 +269,25 @@ header nav {
     text-align: center;
 }
 
-
 #where-were-heading h2,
 #where-were-heading p {
     color: #fff;
     text-shadow: 1px 2px 2px rgba(88, 88, 88, 0.2);
 }
 
-/* Where We're Heading */
+/* Case Studies */
 
 #case-studies {
     text-align: center;
 }
 
 #case-studies .features p {
-    font-size: 18;
+    font-size: 18px;
 }
 
 .article {
-    width: 20%;
-    margin: 3% 1%;
+    width: 30%;
+    margin: 3%;
 }
 
 .article p {
@@ -224,7 +295,7 @@ header nav {
 }
 
 .article img {
-    width: 60%;
+    width: 50%;
 }
 
 /* Join the Team */
@@ -249,7 +320,7 @@ header nav {
 }
 
 #team-members .features p {
-    font-size: 18;
+    font-size: 18px;
 }
 
 .headshot {
@@ -272,16 +343,315 @@ header nav {
 }
 
 /* Footer */
-footer {
+
+footer #footer-widget {
     background-color: #475059;
-    padding: 10px;
+    color: #a2a2a2;
     text-align: center;
-    border-top: 5px solid #4198b9;
-    font-size: 13px;
+    padding: 10px;
+    border-top: 3px solid #4198b9;
 }
 
-footer p {
+footer h3 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#footer-logo {
+    width: 200px;
+    margin: auto;
+}
+
+footer #copyright {
+    background-color: #242424;
+    color: #a2a2a2;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#footer-nav,
+footer #copyright div {
+    display: inline-block;
+}
+
+#footer-nav ul {
+    margin-left: 5px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-nav ul li {
+    display: inline;
+}
+
+footer a {
+    text-decoration: none;
+    color: #a2a2a2;
+}
+
+footer a:hover {
+    font-weight: 500;
+}
+
+#footer-nav li:first-child:after {
+    content: " • ";
+}
+
+
+/* Terms Content */
+
+article#terms-content p {
     font-size: 15px;
-    color: #fff;
+    font-weight: normal;
 }
 
+#terms-content .wrapper {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin: 20px auto 60px;
+    padding: 20px 20px 50px 20px;
+}
+
+#terms-content a {
+    text-decoration: none;
+    color: #4198B9;
+}
+
+/* Responsive and Header fix */
+
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    p,
+    a {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    #hero p {
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 921px) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 8px 0;
+        margin: auto 17px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+        margin-top: 15px;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .menu .secondary-btn {
+        color: #fff !important;
+        background-color: #1e5670;
+        padding: 8px 24px;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+
+    a.secondary-btn:hover {
+        background-color: #4198B9;
+    }
+
+    #terms-content .wrapper {
+        padding: 20px 50px 50px;
+    }
+    
+}
+
+@media screen and (min-width: 920px) and (max-width: 1250px) {
+
+    .header li a {
+        padding: 4px 0;
+        margin: auto 12px !important;
+        font-size: 10px;
+    }
+
+    .header .logo {
+        font-size: 1em;
+        padding: 5px 0;
+    }
+
+    #what-we-do .grid-section:nth-child(2n) {
+        margin: 10px;
+    }
+
+    #terms-content .wrapper {
+        padding: 20px 20px 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    #what-we-do h2 {
+        text-align: center;
+    }
+
+    #what-motivates .grid {
+        display: block;
+    }
+
+    #what-we-do .grid {
+        display: block;
+    }
+
+    #what-we-do .grid-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #what-we-do .grid-section:nth-child(2n) {
+        margin: 40px auto;
+    }
+
+    #team-members .wrapper {
+        padding: 20px 0;
+    }
+
+    #hero {
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: 60% 100%;
+    }
+
+    #what-motivates {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    p,
+    a {
+        font-size: 16px;
+    }
+
+    #what-motivates .features {
+        width: 30%;
+        margin: 2% 1%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #hero {
+        background-position: 70% 100%;
+        background-repeat: no-repeat;
+        height: 80vh;
+    }
+
+    p,
+    a,
+    .subheading {
+        font-size: 15px;
+    }
+
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+
+    #what-motivates .features {
+        width: 100%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #what-motivates .features img {
+        width: 55px;
+    }
+
+    a.primary-btn {
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+
+
+    .article p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    #hero h1 {
+        font-size: 21px;
+    }
+
+    #hero p {
+        font-size: 13px;
+    }
+
+    #case-studies .grid {
+        display: block;
+    }
+
+    .article {
+        width: 70%;
+        margin: auto;
+    }
+
+    #team-members .grid {
+        display: block;
+    }
+
+    #team-members .headshot {
+        display: inline-block;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #team-members .primary-btn {
+        font-size: 13px;
+    }
+
+    #hero .primary-btn {
+        padding: 15px 40px;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    #terms-content .wrapper {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1921px) {
+    #hero-content {
+        margin: auto 0;
+    }
+
+    #hero .wrapper {
+        height: 90%;
+        display: flex;
+        padding: 0;
+    }
+}
